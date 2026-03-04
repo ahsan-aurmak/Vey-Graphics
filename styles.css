@@ -97,10 +97,38 @@ a {
 }
 
 .brand {
-  font-family: 'Space Grotesk', sans-serif;
-  font-weight: 700;
-  letter-spacing: -0.01em;
-  font-size: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  max-width: clamp(150px, 28vw, 220px);
+}
+
+.brand picture {
+  display: block;
+  width: 100%;
+}
+
+.brand-logo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.footer-logo {
+  display: block;
+  width: min(320px, 72vw);
+  height: auto;
+  margin-bottom: 0.8rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .nav-links {

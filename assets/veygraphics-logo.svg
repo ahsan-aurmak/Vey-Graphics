@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1450 380" role="img" aria-labelledby="title desc">
+  <title id="title">Vey Graphics logo</title>
+  <desc id="desc">Vey Graphics wordmark with a globe motif.</desc>
+  <g fill="#49D7D4">
+    <text x="8" y="295" font-size="250" font-family="Times New Roman, Georgia, serif" letter-spacing="-1">VeyGraphics</text>
+  </g>
+
+  <g transform="translate(980 18)">
+    <ellipse cx="250" cy="165" rx="210" ry="165" fill="none" stroke="#76EDE9" stroke-width="9" />
+    <ellipse cx="250" cy="165" rx="160" ry="165" fill="none" stroke="#76EDE9" stroke-width="9" />
+    <path d="M45 66 C210 15, 360 35, 446 119" fill="none" stroke="#76EDE9" stroke-width="8" />
+    <path d="M40 140 C220 98, 375 140, 450 205" fill="none" stroke="#76EDE9" stroke-width="8" />
+    <path d="M42 204 C230 205, 370 245, 447 325" fill="none" stroke="#76EDE9" stroke-width="8" />
+    <line x1="195" y1="345" x2="338" y2="8" stroke="#76EDE9" stroke-width="9" />
+    <circle cx="245" cy="145" r="14" fill="#49D7D4" />
+  </g>
+</svg>

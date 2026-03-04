@@ -7,6 +7,15 @@ This website is now a fully static site.
 - `index.html`
 - `styles.css`
 - `script.js`
+- `assets/veygraphics-logo.svg` (default logo fallback)
+
+## Logo swap (your exact file)
+
+If you want to use your exact supplied logo image, add it as:
+
+- `assets/veygraphics-logo.png`
+
+The site is already wired to prefer `veygraphics-logo.png` automatically.
 
 ## Run locally
 

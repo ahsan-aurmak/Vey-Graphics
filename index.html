@@ -21,7 +21,13 @@
 
     <header class="site-header">
       <nav class="container nav-shell">
-        <a class="brand" href="#home">Vey Graphics</a>
+        <a class="brand" href="#home" aria-label="Vey Graphics home">
+          <picture>
+            <source srcset="assets/veygraphics-logo.png" type="image/png" />
+            <img class="brand-logo" src="assets/veygraphics-logo.svg" alt="Vey Graphics" />
+          </picture>
+          <span class="sr-only">Vey Graphics</span>
+        </a>
 
         <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
           <span></span>
@@ -339,6 +345,10 @@
     <footer class="site-footer" id="contact">
       <div class="container footer-grid">
         <article class="reveal">
+          <picture>
+            <source srcset="assets/veygraphics-logo.png" type="image/png" />
+            <img class="footer-logo" src="assets/veygraphics-logo.svg" alt="Vey Graphics" />
+          </picture>
           <p class="eyebrow">Contact</p>
           <h2>Let’s discuss your next UX challenge</h2>
           <p>
