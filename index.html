@@ -22,10 +22,12 @@
     <header class="site-header">
       <nav class="container nav-shell">
         <a class="brand" href="#home" aria-label="Vey Graphics home">
-          <picture>
-            <source srcset="assets/veygraphics-logo.png" type="image/png" />
-            <img class="brand-logo" src="assets/veygraphics-logo.svg" alt="Vey Graphics" />
-          </picture>
+          <img
+            class="brand-logo"
+            src="assets/veygraphics-logo.png"
+            alt="Vey Graphics"
+            onerror="this.onerror=null;this.src='assets/veygraphics-logo.svg';"
+          />
           <span class="sr-only">Vey Graphics</span>
         </a>
 
@@ -345,10 +347,12 @@
     <footer class="site-footer" id="contact">
       <div class="container footer-grid">
         <article class="reveal">
-          <picture>
-            <source srcset="assets/veygraphics-logo.png" type="image/png" />
-            <img class="footer-logo" src="assets/veygraphics-logo.svg" alt="Vey Graphics" />
-          </picture>
+          <img
+            class="footer-logo"
+            src="assets/veygraphics-logo.png"
+            alt="Vey Graphics"
+            onerror="this.onerror=null;this.src='assets/veygraphics-logo.svg';"
+          />
           <p class="eyebrow">Contact</p>
           <h2>Let’s discuss your next UX challenge</h2>
           <p>
