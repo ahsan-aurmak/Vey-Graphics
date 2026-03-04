@@ -4,19 +4,371 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vey Graphics | UX Design & Research Agency</title>
+    <meta
+      name="description"
+      content="Vey Graphics is a UX Design & Research agency delivering data-driven digital experiences for startups and FTSE 100 organisations."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap"
       rel="stylesheet"
     />
-    <meta
-      name="description"
-      content="Vey Graphics is a UX Design & Research agency delivering data-driven digital experiences for startups and FTSE 100 organisations."
-    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body class="bg-brand-navy text-white">
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+  <body>
+    <a class="skip-link" href="#home">Skip to content</a>
+
+    <header class="site-header">
+      <nav class="container nav-shell">
+        <a class="brand" href="#home">Vey Graphics</a>
+
+        <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="primaryNav">
+          <a href="#home">Home</a>
+          <a href="#about">About Us</a>
+          <a href="#customers">Customers</a>
+          <a href="#blog">Blog</a>
+          <a class="button button-outline" href="#contact">Start a Project</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">UX Design & Research Agency</p>
+            <h1>We design experiences driven by data &amp; research.</h1>
+            <p class="lead">Partnering with startups to FTSE 100 companies.</p>
+
+            <div class="hero-actions">
+              <a class="button" href="#customers">Explore Case Studies</a>
+              <a class="button button-outline" href="#about">Meet the Team</a>
+            </div>
+
+            <ul class="hero-stats" aria-label="Business highlights">
+              <li>
+                <strong>20+</strong>
+                <span>Years of UX expertise</span>
+              </li>
+              <li>
+                <strong>3</strong>
+                <span>Specialist sectors</span>
+              </li>
+              <li>
+                <strong>FTSE 100</strong>
+                <span>Enterprise partnerships</span>
+              </li>
+            </ul>
+          </div>
+
+          <aside class="signal-card reveal" aria-label="Research signal dashboard">
+            <header>
+              <p>Research Signal Dashboard</p>
+              <span>Weekly trend</span>
+            </header>
+
+            <div class="meter-list">
+              <article>
+                <div>
+                  <p>Task success</p>
+                  <strong>92%</strong>
+                </div>
+                <div class="meter"><span style="width: 92%"></span></div>
+              </article>
+              <article>
+                <div>
+                  <p>User confidence</p>
+                  <strong>86%</strong>
+                </div>
+                <div class="meter"><span style="width: 86%"></span></div>
+              </article>
+              <article>
+                <div>
+                  <p>Journey efficiency</p>
+                  <strong>78%</strong>
+                </div>
+                <div class="meter"><span style="width: 78%"></span></div>
+              </article>
+              <article>
+                <div>
+                  <p>Stakeholder alignment</p>
+                  <strong>90%</strong>
+                </div>
+                <div class="meter"><span style="width: 90%"></span></div>
+              </article>
+            </div>
+
+            <div class="signal-notes">
+              <article>
+                <h3>Current focus</h3>
+                <p>AI-assisted service design for regulated teams.</p>
+              </article>
+              <article>
+                <h3>Latest uplift</h3>
+                <p>+34% task completion on complex workflows.</p>
+              </article>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Services">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Services</h2>
+            <p>What we deliver</p>
+          </div>
+
+          <div class="card-grid services-grid">
+            <article class="panel reveal">
+              <span class="chip">01</span>
+              <h3>Strategy &amp; Roadmap</h3>
+              <p>
+                We translate business goals into measurable product decisions, balancing commercial priorities with user outcomes.
+              </p>
+              <ul>
+                <li>Opportunity mapping</li>
+                <li>Prioritised UX roadmap</li>
+              </ul>
+            </article>
+            <article class="panel reveal">
+              <span class="chip">02</span>
+              <h3>UX Audit &amp; Improvement</h3>
+              <p>
+                End-to-end audits combining behavioural analytics and moderated research to reduce friction and increase confidence.
+              </p>
+              <ul>
+                <li>Heuristic + analytics review</li>
+                <li>Actionable optimisation backlog</li>
+              </ul>
+            </article>
+            <article class="panel reveal">
+              <span class="chip">03</span>
+              <h3>UX Training/Certification</h3>
+              <p>
+                Practical coaching programmes that help teams embed accessible, evidence-led design in day-to-day delivery.
+              </p>
+              <ul>
+                <li>In-house capability uplift</li>
+                <li>Certification pathways</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-label="Process">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Process</h2>
+            <p>3-step engagement</p>
+          </div>
+
+          <ol class="process-grid">
+            <li class="panel reveal">
+              <span class="step">01</span>
+              <h3>Consultation</h3>
+              <p>We establish objectives, constraints, and evidence requirements.</p>
+            </li>
+            <li class="panel reveal">
+              <span class="step">02</span>
+              <h3>Estimation</h3>
+              <p>Scope, timeline, and investment are modelled against measurable outcomes.</p>
+            </li>
+            <li class="panel reveal">
+              <span class="step">03</span>
+              <h3>Agreement</h3>
+              <p>We align governance, delivery cadence, and success metrics before implementation.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section" id="about">
+        <div class="container">
+          <article class="about-wrap reveal">
+            <div>
+              <div class="section-head section-head-left">
+                <h2>About Us</h2>
+              </div>
+              <p>
+                For over 20 years, Vey Graphics has delivered strategic UX design and applied research across finance,
+                medical, and automotive organisations. We help complex teams make clear product decisions backed by
+                defensible evidence.
+              </p>
+              <p>
+                Our team also specialises in AI and machine learning design, ensuring automated experiences remain
+                transparent, trustworthy, and understandable for people in real contexts.
+              </p>
+              <p class="ai-note">Advanced AI and Machine Learning design expertise for enterprise products.</p>
+            </div>
+
+            <div class="sector-list">
+              <article>
+                <h3>Finance</h3>
+                <p>High-risk journeys for retail and enterprise banking products.</p>
+              </article>
+              <article>
+                <h3>Medical</h3>
+                <p>Research-led interfaces where clarity and safety are critical.</p>
+              </article>
+              <article>
+                <h3>Automotive</h3>
+                <p>Connected journeys across acquisition, servicing, and support.</p>
+              </article>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="customers">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Customers</h2>
+            <p>Portfolio outcomes</p>
+          </div>
+
+          <div class="card-grid case-grid">
+            <article class="panel reveal">
+              <header>
+                <span>Castrol</span>
+                <p>Customer satisfaction index</p>
+              </header>
+              <div class="bars" aria-hidden="true">
+                <span style="height: 32%"></span>
+                <span style="height: 44%"></span>
+                <span style="height: 57%"></span>
+                <span style="height: 68%"></span>
+                <span style="height: 80%"></span>
+                <span style="height: 88%"></span>
+              </div>
+              <h3>CarLounge MVP Experience</h3>
+              <p>
+                Delivered a validated MVP and simplified onboarding flow, removing uncertainty during key service moments.
+              </p>
+              <strong class="impact">80% satisfaction increase</strong>
+            </article>
+
+            <article class="panel reveal">
+              <header>
+                <span>RBS</span>
+                <p>Median checkout duration</p>
+              </header>
+              <div class="bars" aria-hidden="true">
+                <span style="height: 90%"></span>
+                <span style="height: 78%"></span>
+                <span style="height: 65%"></span>
+                <span style="height: 52%"></span>
+                <span style="height: 41%"></span>
+                <span style="height: 33%"></span>
+              </div>
+              <h3>High-Fidelity Checkout Prototyping</h3>
+              <p>
+                Iterative high-fidelity prototypes and usability rounds removed bottlenecks across payment and verification.
+              </p>
+              <strong class="impact">60% faster checkout speeds</strong>
+            </article>
+
+            <article class="panel reveal">
+              <header>
+                <span>GTT</span>
+                <p>Stakeholder validation score</p>
+              </header>
+              <div class="bars" aria-hidden="true">
+                <span style="height: 38%"></span>
+                <span style="height: 49%"></span>
+                <span style="height: 62%"></span>
+                <span style="height: 73%"></span>
+                <span style="height: 81%"></span>
+                <span style="height: 90%"></span>
+              </div>
+              <h3>SaaS/IaaS Platform Usability</h3>
+              <p>
+                Reworked dense enterprise workflows into role-based journeys for stronger comprehension and confidence.
+              </p>
+              <strong class="impact">80% approval rates</strong>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="blog">
+        <div class="container">
+          <div class="section-head reveal">
+            <h2>Blog</h2>
+            <p>Latest thinking</p>
+          </div>
+
+          <div class="blog-layout">
+            <article class="panel featured-post reveal">
+              <span class="post-meta">Research · 8 min read</span>
+              <h3>Design without testing can cost lives</h3>
+              <p>
+                In safety-critical environments, skipping usability validation creates avoidable risk. A practical model
+                for accountable design reviews.
+              </p>
+              <a href="#contact">Read article</a>
+            </article>
+
+            <div class="blog-stack">
+              <article class="panel reveal">
+                <span class="post-meta">Delivery · 6 min read</span>
+                <h3>Agile vs UX Design</h3>
+                <p>A clear framework for integrating discovery quality into sprint-driven delivery models.</p>
+                <a href="#contact">Read article</a>
+              </article>
+              <article class="panel reveal">
+                <span class="post-meta">AI UX · 7 min read</span>
+                <h3>AI patterns users actually trust</h3>
+                <p>Practical patterns for explainability, model confidence, and human override in AI workflows.</p>
+                <a href="#contact">Read article</a>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="container footer-grid">
+        <article class="reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s discuss your next UX challenge</h2>
+          <p>
+            Tell us what you are building. We will reply with a practical plan, team model, and delivery options.
+          </p>
+
+          <a class="mail-link" href="mailto:hello@veygraphics.co.uk">hello@veygraphics.co.uk</a>
+
+          <div class="social-links">
+            <a href="https://www.linkedin.com" target="_blank" rel="noreferrer">LinkedIn</a>
+            <a href="https://x.com" target="_blank" rel="noreferrer">X</a>
+          </div>
+        </article>
+
+        <form class="contact-form reveal" id="contactForm" novalidate>
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <button class="button" type="submit">Send Message</button>
+          <p id="formFeedback" aria-live="polite"></p>
+        </form>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
